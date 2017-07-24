@@ -7,7 +7,7 @@ CentraleSupélec Rennes, academic year 2016/2017
 ## How does addressable LEDs work?
 First of all, we focus on the behavior of an addressable LED strip such as the one used in this project (with WS2812 RGB LEDs). Why such a component? Because it is cheap and available in several configurations (LEDs density, waterproof or not, etc.). Strips used in this project [1] have 3 pins: ground, 5V and a data pin.
 
-![p3](https://github.com/pcotret/BamboozLED/blob/master/report/img/led_strip.png?raw=true| width=100)
+![p3](https://github.com/pcotret/BamboozLED/blob/master/report/img/led_strip.png | width=100)
 
 A single strip is connected to an Arduino board which sends 8-bit RGB and intensity values. Fortunately for us, we do not have to dive at the register level to control such a component: Adafruit has published a library online: https://github.com/adafruit/Adafruit_NeoPixel.
 

@@ -1,13 +1,13 @@
-![p1](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/bamboozled2.png?token=f2076a998e726ed1c0602cca487ec3d9d8c402e5)
+![p1](https://github.com/pcotret/BamboozLED/blob/master/report/img/bamboozled2.png?raw=true)
 ### Ludovic Blunat, Stanislas Bruhière, Renan Herniou
 CentraleSupélec Rennes, academic year 2016/2017
 
-![p2](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/cover.jpeg?token=f068a968103ada07db1aded7012c03808fae53b9)
+![p2](https://github.com/pcotret/BamboozLED/blob/master/report/img/cover.jpeg?raw=true)
 
 ## How does addressable LEDs work?
 First of all, we focus on the behavior of an addressable LED strip such as the one used in this project (with WS2812 RGB LEDs). Why such a component? Because it is cheap and available in several configurations (LEDs density, waterproof or not, etc.). Strips used in this project [1] have 3 pins: ground, 5V and a data pin.
 
-![p3](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/led_strip.png?token=dbcb78339da97e1423e5a90462fa884098302944)
+![p3](https://github.com/pcotret/BamboozLED/blob/master/report/img/led_strip.png?raw=true)
 
 A single strip is connected to an Arduino board which sends 8-bit RGB and intensity values. Fortunately for us, we do not have to dive at the register level to control such a component: Adafruit has published a library online: https://github.com/adafruit/Adafruit_NeoPixel.
 
@@ -17,7 +17,7 @@ An LED is an optoelectronic component: it is able to produce light when powered 
 
 When an electric current crosses semiconductor layers, many electrons encounter positively charged atoms creating energy as a light flux. The light flux is nearly monochromatic due to a small transmission bandwidth. We can play with the light wavelength by modifying semiconductor layers. Several semiconductor technologies are available on the market. A RGB LED consists of 3 seperate cells emitting at 3 wavelengths (for red, green and blue). The microcontroller embedded in the WS2812 chip adjusts the voltage for each monochromatic cell in order to vary the intensity and the overall color emitted by the WS2812.
 
-![p4](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/global.png?token=622d3ea46238a53584f9690043e6db70e72a5669)
+![p4](https://github.com/pcotret/BamboozLED/blob/master/report/img/global.png?raw=true)
 
 ## Project description
 We have built a 16x16 LED panel which can be controlled by an Arduino. Each LED can be controlled individually: therefore, we are able to create animations on the panel.
@@ -32,8 +32,8 @@ Finally, we chose a 12V power supply. We needed to lower the input voltage to 5V
 ### Structure
 The frame of BamboozLED<sup>TM</sup> is made of 10mm-wide wood panels, its whole size is a parallelepipoid of 540x540x30mm.
 
-![p5](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/pic1.jpg?token=c478e7035b94e4e8632239c40f366e6d99efefe3)
-![p6](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/pic2.jpg?token=a5d42d62a40c8fd6caadc0f6f3723cd4454e5cd9)
+![p5](https://github.com/pcotret/BamboozLED/blob/master/report/img/pic1.jpg?raw=true)
+![p6](https://github.com/pcotret/BamboozLED/blob/master/report/img/pic2.jpg?raw=true)
 
 Due to the light intensity, we decided to put a 3mm transparent PVC layer at the top. Furthermore, we also put opaque PVC layers between each pixel.
 
@@ -42,7 +42,7 @@ The 16 LED strips (including 16 LEDs each) are linked in a "snake"' layout to tr
 ### Software
 In order to control the animation running on BamboozLED<sup>TM</sup>, we used Glediator [4]: this software offers several possibilities through its interface: pictures mixing, colors effects... The greatest feature of Glediator is the ability to modify how the signal is trasmitted to the Arduino depending of the layout of the target panel (we can specify panel dimensions, we can use a set of several panels, etc.).
 
-![p7](https://bytebucket.org/pcotret/bamboozled/raw/e0ce517bc1800941d1e6d031656f7b37c84bef6c/report/img/glediator.jpg?token=004f93e2ab35450cecba4bad15fca44aa9293b79)
+![p7](https://github.com/pcotret/BamboozLED/blob/master/report/img/glediator.jpg?raw=true)
 
 ## Arduino code
 https://bitbucket.org/pcotret/bamboozled/src/e0ce517bc1800941d1e6d031656f7b37c84bef6c/WS2812_Glediator/?at=master

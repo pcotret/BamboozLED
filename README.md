@@ -39,6 +39,8 @@ Due to the light intensity, we decided to put a 3mm transparent PVC layer at the
 
 The 16 LED strips (including 16 LEDs each) are linked in a "snake"' layout to transmit the data signal all along BamboozLED<sup>TM</sup>. The data signal is extended towards the Arduino driving the LED panel.
 
+You can find pictures of the building process at: https://github.com/pcotret/BamboozLED/tree/master/pictures
+
 ### Software
 In order to control the animation running on BamboozLED<sup>TM</sup>, we used Glediator [4]: this software offers several possibilities through its interface: pictures mixing, colors effects... The greatest feature of Glediator is the ability to modify how the signal is trasmitted to the Arduino depending of the layout of the target panel (we can specify panel dimensions, we can use a set of several panels, etc.).
 
